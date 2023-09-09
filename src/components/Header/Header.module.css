@@ -1,0 +1,38 @@
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #cecece;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15vw;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.logo{
+    height: 30px;
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+.logoName{
+    width: fit-content;
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header ul li{
+    margin-left: 15px;
+    line-height: 30px;
+}

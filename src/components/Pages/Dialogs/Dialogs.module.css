@@ -1,0 +1,113 @@
+.dialogs{
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #cecece;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 25% auto;
+    height: 80vh;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.users{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.users a{
+    text-decoration: none;
+}
+
+.user{
+    border-bottom: 1px solid #cecece;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.user.active{
+    opacity: 0.5;
+}
+
+.user:last-child{
+    border-bottom: none;
+}
+
+.messagesContainer{
+    background: #f5f5f5;
+    width: 100%;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.messagesField{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.message{
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: fit-content;
+    margin-right: auto;
+    border: 1px solid #cecece;
+}
+
+.my{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 0;
+    background: #dddddd;
+    color: rgb(0, 0, 0)       
+}
+
+.sendMessageContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.sendMessageContainer textarea{
+    width: 100%;
+    resize: none;
+    background: none;
+    border: 1px solid #cecece;
+    padding: 15px;
+    height: 20px;
+    outline: none;
+    border-radius: 15px;
+}
+
+.sendMessageContainer button{
+    display: block;
+    margin-left: 15px;
+    padding: 7px 20px;
+    border: 1px solid #cecece;
+    font-weight: thin;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff
+}
